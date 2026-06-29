@@ -13,7 +13,27 @@ output "suffix" {
   value = random_string.suffix.result
 }
 
+# To display sensitive data
 output "password" {
   value = var.password
   sensitive = true
+}
+
+output "number" {
+  value = var.number
+}
+
+output "bool" {
+  value = var.bool
+}
+
+output "list" {
+  value = var.list
+}
+
+output "set" {
+  value = var.set
+}
+output "map" {
+  value = var.map
 }

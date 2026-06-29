@@ -3,11 +3,11 @@ resource "random_string" "suffix" {
   upper = false
 }
 
-/*locals {
+locals {
   environment_prefix = "dev"
-}*/
+}
 
 # After String Interpolation
-locals {
-  environment_prefix = "${var.application_name}-${var.environment_name}"
-}
+# locals {
+#   environment_prefix = "${var.application_name}-${var.environment_name}"
+# }
