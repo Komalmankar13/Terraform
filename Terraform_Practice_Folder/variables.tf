@@ -11,6 +11,12 @@ variable "password" {
   type = string
   sensitive = true
 
+  # Check condition if true---> execute else display error
+  validation {
+    condition = length(var.password) >= 8
+    error_message = "Passsword lenght should be equal to or greater than 8"
+  }
+
 }
 
 variable "number" {
