@@ -14,10 +14,10 @@ output "suffix" {
 }
 
 # To display sensitive data
-output "password" {
+/*output "password" {
   value = var.password
   sensitive = true
-}
+}*/
 
 output "number" {
   value = var.number
@@ -36,4 +36,13 @@ output "set" {
 }
 output "map" {
   value = var.map
+}
+
+
+# Module outputs
+output "alpha" {
+  value = module.alpha.random_string
+}
+output "bravo" {
+  value = module.bravo.random_string
 }

@@ -6,7 +6,7 @@ variable "environment_name" {
   type = string
 }
 
-# For sensitive data
+/* For sensitive data
 variable "password" {
   type = string
   sensitive = true
@@ -17,7 +17,7 @@ variable "password" {
     error_message = "Passsword lenght should be equal to or greater than 8"
   }
 
-}
+}*/
 
 variable "number" {
   type = number
